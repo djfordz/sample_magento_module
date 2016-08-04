@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <default>
+        <checkout_onepage_index>
+            <reference name="checkout.onepage.shipping_method">
+                <action method="setTemplate"><template>dfordz/ageverification/progress/age_verification.phtml</template></action>
+            </reference>
+        </checkout_onepage_index>
+    </default>
+</layout>

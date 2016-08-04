@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dfordz_AgeVerification>
+            <version>1.0.0</version>
+        </Dfordz_AgeVerification>
+    </modules>
+
+    <global>
+        <models>
+            <dfageverify>
+                <class>Dfordz_AgeVerification_Model</class>
+            </dfageverify>
+        </models>
+
+        <blocks>
+            <dfageverify>
+                <class>Dfordz_AgeVerification_Block</class>
+            </dfageverify>
+        </blocks>
+
+        <helpers>
+            <dfageverify>
+                <class>Dfordz_AgeVerification_Helper</class>
+            </dfageverify>
+        </helpers>
+
+        <events>
+            <checkout_controller_onepage_save_shipping_method>
+                <observers>
+                    <dfageverify>
+                        <class>dfageverify/observer</class>
+                        <method>verifyAge</method>
+                    </dfageverify>
+                </observers>
+            </checkout_controller_onepage_save_shipping_method>
+
+            <dfageverify_notifications_before>
+                <observers>
+                    <dfageverify>
+                        <class>dfageverify/observer</class>
+                        <method>checkMessages</method>
+                    </dfageverify>
+                </observers>
+            </dfageverify_notifications_before>
+        </events>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <dfageverify>
+                    <file>dfordz/ageverification.xml</file>
+                </dfageverify>
+            </updates>
+        </layout>
+    </frontend>
+</config>
+

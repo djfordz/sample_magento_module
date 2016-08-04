@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <dfordz translate="label">
+            <class>separator-top</class>
+            <label>Age Verification</label>
+            <tab>customer</tab>
+            <sort_order>130</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <api translate="label">
+                    <label>Age Verification</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable/Disable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <api_endpoint translate="label">
+                            <label>Api Endpoint</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>visit <a href="http://agecheq.com" rel="nofollow" target="blank">AgeCheq.com</a>to sign up for an account.</comment>
+                        </api_endpoint>
+
+                        <api_public_key translate="label">
+                            <label>API Public Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_public_key>
+
+                        <api_private_key translate="label">
+                            <label>API Private Key</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_private_key>
+                    </fields>
+                </api>
+
+                <verify_options translate="label">
+                    <label>Age Cheq Options</label>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <min_age translate="label">
+                            <label>Minimum Age Requirement</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </min_age>
+                    </fields>
+                </verify_options>
+            </groups>
+        </dfordz>
+    </sections>
+</config>
